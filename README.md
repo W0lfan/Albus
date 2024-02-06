@@ -1,6 +1,10 @@
 
 ![long_logo](https://github.com/W0lfan/Albus/assets/69418024/1cc7a018-33f2-40d8-9bb8-529231228d4a)
-# De manière générale
+# Avis au public
+## Licence
+Albus est un projet open-source dont le code est disponible en accès libre sur Internet, et donc l'objectif est fondé sur des données publiques. L'utilisation des ressources fournies par le projet est autorisée, ainsi que sa modification. Cependant, il est interdit de publier une version de Albus modifiée sous le même nom, ou de s'en accaparer les droits. Albus est un projet original et protégé par les droits d'auteurs.
+Les logos et couleurs de l'application sont directement inspirés du logo de la ville d'Albi et de Libéa. Pour toute réclamation, merci de contacter naflouille@proton.me. 
+
 ## Mentions légales
 ### Désignations
 Dans les paragraphes ci-contre seront mentionnés des termes qui s'associent aux définitions ci-contre:
@@ -30,8 +34,3 @@ De plus, et pour éviter toute suspicion d'activité frauduleuse, il n'est jamai
 ## Naflouille Creations
 Naflouille Creations est une organisation privée à but non-lucratif, gérée par Naflouille.   
 Pour toutes demandes d'informations supplémentaires, merci de vous adresser à naflouille@proton.me.  
-
-
-
-
-
