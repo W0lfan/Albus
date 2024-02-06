@@ -43,7 +43,7 @@ N.B.:
 #### Agency.json
 `agency.json` contient toutes les agences (entreprises) en charge des lignes du réseau de bus urbains du Grand Albigeois.
 
-```json
+```js
 [{
     "agency_id": "1", // s.e.
     "agency_name": "libéA Mobilités", // s.e.
@@ -58,7 +58,7 @@ N.B.:
 #### Calendar_dates.json
 `calendar_date.json` semble représenter les dates du calendrier de 2023 à 2024 et attribuer à chacune de ces dates une `service_id` correspondant au service associé. Il sera utile pour connaître quel service appeler à telle date.
 
-```json
+```js
   [{
     "service_id": "2", // De 1 à 7
     "date": "20231023", // Supposément 2023-10-23, soit 23 octobre 2023
@@ -70,7 +70,7 @@ N.B.:
 #### Calendar.json
 Pour tout `service_id`, allant de 1 à 7, les 7 éléments de `calendar.json` permettent de relier les lignes selon leur `service_id` pour savoir quels jours sont des jours où la ligne passe.
 
-```json
+```js
   [{
     "service_id": "1", // c.f. calendar_date.json
     "monday": "0", // Lundi ; pas de bus
@@ -89,7 +89,7 @@ Pour tout `service_id`, allant de 1 à 7, les 7 éléments de `calendar.json` pe
 #### Routes.json
 L'ensemble des lignes de bus sont répertoriées ici et sont cruciales pour connaître l'ensemble des horaires et des trajets, notamment avec `route_id`.
 
-```json
+```js
 [{
     "route_id": "113", // s.e.
     "agency_id": "1", // s.e.
@@ -108,7 +108,7 @@ L'ensemble des lignes de bus sont répertoriées ici et sont cruciales pour conn
 L'ensemble des trajets des lignes selon leur id (`route_id`), leur `servide_id`, 
 `trips.json` dépend de `routes.json`. 
 
-```json
+```js
 [{
     "route_id": "113", // c.f. routes.json
     "service_id": "1", // c.f. calendar_dates.json
@@ -126,7 +126,7 @@ L'ensemble des trajets des lignes selon leur id (`route_id`), leur `servide_id`,
 « Shapes » ne signifie pas « formes » mais bien itinéraire. Selon une ID, ici `15617`, en rapport à la ligne `113` (soit, `A`), on obtient une large séquence d'éléments qui donnent le trajet exact (probablement en aller-retour) de la ligne.
 `shapes.json` est lié à `trips.json`;
 
-```json
+```js
 [{
     "shape_id": "15617", // c.f. trips.json
     "shape_pt_lat": "+43.943896", // s.e.
@@ -147,7 +147,7 @@ L'ensemble des trajets des lignes selon leur id (`route_id`), leur `servide_id`,
 Les temps d'arrêts de chaque ligne, dépendant du trajet fait.  Les temps sont approximatifs, et le pistage en temps réel indisponible. `stop_times` sera très utile pour `stops.json`.
 `stop_times.json` dépend de `trips.json`.
 
-```json
+```js
 [{
     "trip_id": "51929", // c.f. trips.json
     "arrival_time": "07:26:00", // s.e.
@@ -166,7 +166,7 @@ Les temps d'arrêts de chaque ligne, dépendant du trajet fait.  Les temps sont 
 Les arrêts de chaque ligne qui sont à trouver en dépendance de `stop_times.json`, il semblerait. Utile pour les positions des arrêts. 
 `stops.json` dépend de `stop_times.json`.
 
-```json
+```js
 [{
     "stop_id": "10678", // Dépend de stop_times.json. Il semblerait que la liaison ne soit pas toujours présente
     "stop_code": "NGR", // s.e.
