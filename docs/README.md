@@ -1,6 +1,5 @@
 # Menu
 Le menu suivant vous aidera à vous repérer dans le fonctionnement des données et d'Albus.
-
 * [Fonctionnement général d'Albus](Documentation#Fonctionnement)
 * [Données](Documentation#Données)
 	* [agency.json](Documentation#Données#Agency.json)
@@ -12,9 +11,11 @@ Le menu suivant vous aidera à vous repérer dans le fonctionnement des données
 	* [stop_times.json](Documentation#Données#Stop_times.json)
 	* [stops.json](Documentation#Données#stops.json)
 * [Conclusion des données](Documentation#Conclusion)
+<br><br><br>
 
 # Publication
 Le code source de Albus est disponible [sur Github](https://github.com/W0lfan/Albus), en accès libre. Toute aide ou fix de bug est le bienvenue.
+<br><br><br>
 
 # Pour aller plus loin
 ### Fonctionnement
@@ -34,12 +35,14 @@ Albus se base sur un [jeu de donnée](https://fr.wikipedia.org/wiki/Jeu_de_donn%
 Chacun de ces fichiers est intrinsèquement lié, et leur construction des détaillées ci-contre.
 L'application web Albus fait la lecture et la liaison de tous ces fichiers en temps réels pour obtenir les informations adéquates demandées par l'utilisateur. 
 Il est cependant important de comprendre le fonctionnement des huit (8) fichiers qui composent la base de données Albus.
+<br><br><br>
 
 ### Données
-
 N.B.: 
 * `s.e.` signifie `self explanatory` (signification évidente)
 * `*` signifie que le sens du paramètre n'a pas encore été trouvé
+
+<br><br>
 #### Agency.json
 `agency.json` contient toutes les agences (entreprises) en charge des lignes du réseau de bus urbains du Grand Albigeois.
 
@@ -53,8 +56,7 @@ N.B.:
     "agency_phone\r": "+33563760505\r" // s.e.
 }]
 ```
-
-
+<br><br>
 #### Calendar_dates.json
 `calendar_date.json` semble représenter les dates du calendrier de 2023 à 2024 et attribuer à chacune de ces dates une `service_id` correspondant au service associé. Il sera utile pour connaître quel service appeler à telle date.
 
@@ -66,7 +68,7 @@ N.B.:
   }]
 ```
 
-
+<br><br>
 #### Calendar.json
 Pour tout `service_id`, allant de 1 à 7, les 7 éléments de `calendar.json` permettent de relier les lignes selon leur `service_id` pour savoir quels jours sont des jours où la ligne passe.
 
@@ -85,7 +87,7 @@ Pour tout `service_id`, allant de 1 à 7, les 7 éléments de `calendar.json` pe
 }]
 ```
 
-
+<br><br>
 #### Routes.json
 L'ensemble des lignes de bus sont répertoriées ici et sont cruciales pour connaître l'ensemble des horaires et des trajets, notamment avec `route_id`.
 
@@ -102,8 +104,7 @@ L'ensemble des lignes de bus sont répertoriées ici et sont cruciales pour conn
 }]
 ```
 
-
-
+<br><br>
 #### Trips.json
 L'ensemble des trajets des lignes selon leur id (`route_id`), leur `servide_id`, 
 `trips.json` dépend de `routes.json`. 
@@ -120,8 +121,7 @@ L'ensemble des trajets des lignes selon leur id (`route_id`), leur `servide_id`,
 }]
 ```
 
-
-
+<br><br>
 #### Shapes.json
 « Shapes » ne signifie pas « formes » mais bien itinéraire. Selon une ID, ici `15617`, en rapport à la ligne `113` (soit, `A`), on obtient une large séquence d'éléments qui donnent le trajet exact (probablement en aller-retour) de la ligne.
 `shapes.json` est lié à `trips.json`;
@@ -141,8 +141,7 @@ L'ensemble des trajets des lignes selon leur id (`route_id`), leur `servide_id`,
 }]
 ```
 
-
-
+<br><br>
 #### Stop_times.json
 Les temps d'arrêts de chaque ligne, dépendant du trajet fait.  Les temps sont approximatifs, et le pistage en temps réel indisponible. `stop_times` sera très utile pour `stops.json`.
 `stop_times.json` dépend de `trips.json`.
@@ -160,8 +159,7 @@ Les temps d'arrêts de chaque ligne, dépendant du trajet fait.  Les temps sont 
 }]
 ```
 
-
-
+<br><br>
 #### Stops.json
 Les arrêts de chaque ligne qui sont à trouver en dépendance de `stop_times.json`, il semblerait. Utile pour les positions des arrêts. 
 `stops.json` dépend de `stop_times.json`.
@@ -179,8 +177,7 @@ Les arrêts de chaque ligne qui sont à trouver en dépendance de `stop_times.js
 }]
 ```
 
-
-
+<br><br>
 ### Conclusion
 Pour conclure, on voit bien un héritage entre les différentes données. 
 Libéa étant la seule entreprise s'occupant des lignes de bus du Grand Albigeois, `agency.json` se retrouve assez isolée. Elle n'est utile que pour des informations *complémentaires*.
