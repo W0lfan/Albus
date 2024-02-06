@@ -191,13 +191,11 @@ Libéa étant la seule entreprise s'occupant des lignes de bus du Grand Albigeoi
 `direction_id` reste négligeable, mais important. Il sera utile pour la précision algorithmique. 
 
 `trips.json` précise la dépendance de `shapes.json` d'une manière rapide: `shape_id`, dans l'objectif de connaître avec précision le trajet complet du bus.
-
-![Frame 17](https://github.com/W0lfan/Albus/assets/69418024/69e8e2b2-1c72-4092-8bfb-55ea8d7dbe30)
-
-
 De même, `trips.json` précise la dépendance de `stop_times.json` grâce à l'usage de `trip_id`. 
 `stop_sequence` se lie avec `direction_id`. 
 
 `stop_times.json` précise la dépendance de `stops.json` grâce à l'usage de `stop_id`. 
 
 
+
+![Frame 17](https://github.com/W0lfan/Albus/assets/69418024/69e8e2b2-1c72-4092-8bfb-55ea8d7dbe30)
