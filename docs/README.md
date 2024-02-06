@@ -41,7 +41,9 @@ Il est cependant important de comprendre le fonctionnement des huit (8) fichiers
 N.B.: 
 * `s.e.` signifie `self explanatory` (signification évidente)
 * `*` signifie que le sens du paramètre n'a pas encore été trouvé
+
 <br>
+
 #### Agency.json 
 `agency.json` contient toutes les agences (entreprises) en charge des lignes du réseau de bus urbains du Grand Albigeois.
 
