@@ -194,6 +194,6 @@ De même, `trips.json` précise la dépendance de `stop_times.json` grâce à l'
 
 `stop_times.json` précise la dépendance de `stops.json` grâce à l'usage de `stop_id`. 
 
-
+<br><br>
 
 ![Frame 17](https://github.com/W0lfan/Albus/assets/69418024/69e8e2b2-1c72-4092-8bfb-55ea8d7dbe30)
