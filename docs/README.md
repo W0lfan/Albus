@@ -11,6 +11,7 @@ Le menu suivant vous aidera à vous repérer dans le fonctionnement des données
 	* [stop_times.json](Documentation#Données#Stop_times.json)
 	* [stops.json](Documentation#Données#stops.json)
 * [Conclusion des données](Documentation#Conclusion)
+* [Code de conversion de GTFS to JSON](Documentation#GTFStoJSON)
 <br><br><br>
 
 # Publication
@@ -195,5 +196,60 @@ De même, `trips.json` précise la dépendance de `stop_times.json` grâce à l'
 `stop_times.json` précise la dépendance de `stops.json` grâce à l'usage de `stop_id`. 
 
 <br><br>
-
 ![Frame 17](https://github.com/W0lfan/Albus/assets/69418024/69e8e2b2-1c72-4092-8bfb-55ea8d7dbe30)
+
+
+<br><br>
+## GTFS to JSON
+```js
+import fs from "fs";
+
+const directory = "trips";
+
+// Chemin absolu 
+const inputFilePath = `C:/Users/Utilisateur/OneDrive/Bureau/projects/albi-bus/reseau-bus-albi/${directory}.txt`;
+const outputFilePath =  `C:/Users/Utilisateur/OneDrive/Bureau/projects/albi-bus/reseau-bus-albi/${directory}.json`;
+
+fs.readFile(inputFilePath, (error, d) => {
+    if (error) throw error;
+
+    const JSONList = [];
+    const data = d.toString();
+    const lines = data.split("\n");
+    let InitialHeader;
+
+    lines.forEach((line, index) => {
+        if (line) {
+            const elements = line.split(",");
+            if (index !== 0) {
+                JSONList.push({});
+                InitialHeader.forEach((header, i) => {
+                    JSONList[index - 1][header] = elements[i];
+                });
+            } else {
+                InitialHeader = elements;
+            }
+        }
+    });
+
+    const jsonString = JSON.stringify(JSONList, null, 2);
+
+    fs.access(outputFilePath, fs.constants.F_OK, (err) => {
+        if (err) {
+            fs.writeFile(outputFilePath, jsonString, (writeError) => {
+                if (writeError) throw writeError;
+                console.log("File has been created and named routes.json!");
+            });
+            fs.unlink(inputFilePath, (error) => {
+                if (error) throw error;
+                console.log(".txt file has been deleted.")
+            });
+        } else {
+            fs.writeFile(outputFilePath, jsonString, (writeError) => {
+                if (writeError) throw writeError;
+                console.log("File has been overwritten and named routes.json!");
+            });
+        }
+    });
+});
+```
