@@ -11,7 +11,6 @@ Le menu suivant vous aidera à vous repérer dans le fonctionnement des données
 	* [stop_times.json](Documentation#Données#Stop_times.json)
 	* [stops.json](Documentation#Données#stops.json)
 * [Conclusion des données](Documentation#Conclusion)
-* [Code de conversion de GTFS to JSON](Documentation#GTFStoJSON)
 <br><br><br>
 
 # Publication
@@ -201,6 +200,8 @@ De même, `trips.json` précise la dépendance de `stop_times.json` grâce à l'
 
 <br><br>
 ## GTFS to JSON
+Lecture, conversion, puis suppression des fichiers .txt au format GTFS, et création d'un fichier contenant les données en JSON.
+<br>
 ```js
 import fs from "fs";
 
