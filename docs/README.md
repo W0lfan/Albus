@@ -13,6 +13,10 @@ Le menu suivant vous aidera à vous repérer dans le fonctionnement des données
 * [Conclusion des données](Documentation#Conclusion)
 <br><br><br>
 
+# Algus
+Algus est l'algorithme de recherche public utilisé pour l'application Albus. 
+<br><br><br>
+
 # Publication
 Le code source de Albus est disponible [sur Github](https://github.com/W0lfan/Albus), en accès libre. Toute aide ou fix de bug est le bienvenue.
 <br><br><br>
