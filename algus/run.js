@@ -3,14 +3,19 @@ import AlgusInstanceDirector from "./index.js";
 
 const algus = new AlgusInstanceDirector({
     preciseSearch : true,
-    printMethods : true,
-    name : "Algus 1 - Tests",
-    instanceList : ["calendar_dates","calendar","routes","trips"]
+    printMethods : false,
+    name : "Algus",
+    instanceList : ["calendar_dates","calendar","routes","trips","shapes","stop_times","stops"]
 });
 
+
+
+
 algus.run({
-    name : "A",
+    name : "G",
     date : "20240218",
-    direction : null,
+    direction : 1,
     block_id : null
+}, (algusResults) => {
+    console.log(algusResults.stops)
 })

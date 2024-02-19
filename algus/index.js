@@ -11,6 +11,7 @@
 import { instances } from "./config/config.js";
 import Instance from "./instances/instance.js";
 import { v1 as uuid } from 'uuid';
+import chalk from 'chalk';
 
 class AlgusInstanceDirector {
     /*
@@ -42,7 +43,9 @@ class AlgusInstanceDirector {
 
         this.printMethod = `Algus <@${this.id}> (${this.name})`;
 
-
+        console.log(chalk.green(`Initialized Algus "${this.name}". ${
+            this.printMethods ? '' : 'For more informations, please enable the printMethods parameter.'
+        }`));
         if (this.printMethods) {
             console.log(`Initialized ${this.printMethod}\nPrecise search: ${this.preciseSearch}\nMethods printing: ${this.printMethods}\nCustom instances: ${this.instancesList.join(", ")}`);
         }
@@ -58,6 +61,7 @@ class AlgusInstanceDirector {
             const instance = new Instance(instanceName, this);
             this.instances.push(instance);
 
+            console.log(chalk.green(`Created ${instance.name}`));
             if (this.printMethods) {
                 console.log(instance.toString());
             }
@@ -72,13 +76,14 @@ class AlgusInstanceDirector {
 
     // Self explanatory
     removeInstance(instance) {
-        if (!this.instances.includes(instance)) {
+        if (!this.instances.find((i) => i.name != instance.name)) {
             throw new Error(`Error while deleting ${this.printMethod}: Instance does not exists in ${this.printMethod}'s instances`)
         }
 
         const instanceIndex = this.instances.indexOf(this);
         this.instances.splice(instanceIndex,1);
 
+        console.log(chalk.red(`Deleted ${instance.name}`));
         if (this.printMethods) {
             console.log(`Deleted ${instance.printMethod} (${instance.name}) of ${this.printMethod}`);
         }
@@ -157,8 +162,42 @@ class AlgusInstanceDirector {
         })
     }
 
+    getShapes(shapeID, callback) {
+        const shapes = this.createInstance("shapes");
+        shapes.run((instance, shapesList) => {
+            if (callback) {
+                const shapesFiltered = shapesList.filter((s) => s.shape_id === shapeID);
+                callback(shapesFiltered);
+            }
+        })
+    }
 
-    run(hints) {
+    getStopsTimes(trips, callback) {
+        const stopTimes = this.createInstance("stop_times");
+        stopTimes.run((instance, stopTimesList) => {
+            if (callback) {
+                const stopTimesListFiltered = stopTimesList.filter((s) => {
+                    return trips.some((t) => s.trip_id === t.trip_id);
+                });
+                callback(stopTimesListFiltered);
+            }
+        })
+    }
+
+    getStops(stopTimes, callback) {
+        const stops = this.createInstance("stops");
+        stops.run((instance, stopsList) => {
+            if (callback) {
+                const stopsListFiltered = stopsList.filter((s) => {
+                    return stopTimes.some((t) => t.stop_id === s.stop_id);
+                });
+                callback(stopsListFiltered);
+            }
+        })
+    }
+
+
+    run(hints, callback) {
         /*
 
             hints is an object containing the most important information for Algus to properly find a line.
@@ -170,7 +209,7 @@ class AlgusInstanceDirector {
 
         */
 
-        if (!hints.name || !hints.date) {
+        if (!hints.name || !hints.date || hints.direction == null || hints.direction == undefined) {
             throw new Error("Error while running Algus: missing important parameters. Please view documentation for usage.");
         }
 
@@ -183,9 +222,20 @@ class AlgusInstanceDirector {
                         return parseInt(ID) == hints.block_id
                     });
 
-                    console.log(period);
-                    console.log(route);
-                    console.log(trips);
+                    this.getShapes(trips[0].shape_id, (shapes) => {
+                        this.getStopsTimes(trips, (stopTimes) => {
+                            this.getStops(stopTimes, (stops) => {
+                                callback({
+                                    period : period,
+                                    route : route,
+                                    trips : trips,
+                                    shapes : shapes,
+                                    stopTimes : stopTimes,
+                                    stops : stops
+                                });
+                            })
+                        })
+                    })
                 })
             })
         })

@@ -1,6 +1,7 @@
 import fetch from 'node-fetch'; // Import fetch for Node.js environment
 import { v1 as uuid } from 'uuid';
 import Method from './methods.js';
+import chalk from 'chalk';
 
 class Instance  {
     /*
@@ -35,7 +36,8 @@ class Instance  {
                 const data = await this.fetchData();
                 this.data = data;
                 this.method = new Method(this, data);
-                
+    
+                console.log(chalk.green(`Initialized ${this.name}`));
                 if (this.algus.printMethods) {
                     console.log(`Initialized ${this.name} for ${this.printMethod} (${this.algus.printMethod})`);
                 }

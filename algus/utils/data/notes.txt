@@ -8,3 +8,6 @@ vacances : postes en 300
 
 x51 et plus : après midi
 301 à 3
+
+Les trips_id n'ont aucune importance à partir du moment où ils sont filtrés. 
+Chaque shape a un chiffre différent selon les directions. 
