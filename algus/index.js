@@ -11,9 +11,8 @@
 import { instances } from "./config/config.js";
 import Instance from "./instances/instance.js";
 import { v1 as uuid } from 'uuid';
-import chalk from 'chalk';
 
-class AlgusInstanceDirector {
+export default class AlgusInstanceDirector {
     /*
 
         For testing purposes, and also optimization, the two parameters of the constructor
@@ -43,7 +42,7 @@ class AlgusInstanceDirector {
 
         this.printMethod = `Algus <@${this.id}> (${this.name})`;
 
-        console.log(chalk.green(`Initialized Algus "${this.name}". ${
+        console.log((`Initialized Algus "${this.name}". ${
             this.printMethods ? '' : 'For more informations, please enable the printMethods parameter.'
         }`));
         if (this.printMethods) {
@@ -61,7 +60,7 @@ class AlgusInstanceDirector {
             const instance = new Instance(instanceName, this);
             this.instances.push(instance);
 
-            console.log(chalk.green(`Created ${instance.name}`));
+            console.log((`Created ${instance.name}`));
             if (this.printMethods) {
                 console.log(instance.toString());
             }
@@ -83,7 +82,7 @@ class AlgusInstanceDirector {
         const instanceIndex = this.instances.indexOf(this);
         this.instances.splice(instanceIndex,1);
 
-        console.log(chalk.red(`Deleted ${instance.name}`));
+        console.log((`Deleted ${instance.name}`));
         if (this.printMethods) {
             console.log(`Deleted ${instance.printMethod} (${instance.name}) of ${this.printMethod}`);
         }
@@ -126,6 +125,16 @@ class AlgusInstanceDirector {
     }
 
 
+    getRoutes(callback) {
+        let routes = this.getInstance("routes");
+        if (!routes) {
+            routes = this.createInstance("routes");
+        }
+
+        routes.run((instance, list) => {
+            callback(list);
+        })
+    }
 
     getRoute(routeName, callback) {
         let name = routeName;
@@ -209,7 +218,7 @@ class AlgusInstanceDirector {
 
         */
 
-        if (!hints.name || !hints.date || hints.direction == null || hints.direction == undefined) {
+        if (!hints.name || !hints.date ) {
             throw new Error("Error while running Algus: missing important parameters. Please view documentation for usage.");
         }
 
@@ -225,14 +234,14 @@ class AlgusInstanceDirector {
                     this.getShapes(trips[0].shape_id, (shapes) => {
                         this.getStopsTimes(trips, (stopTimes) => {
                             this.getStops(stopTimes, (stops) => {
-                                callback({
+                                callback( {
                                     period : period,
                                     route : route,
                                     trips : trips,
                                     shapes : shapes,
                                     stopTimes : stopTimes,
                                     stops : stops
-                                });
+                                })
                             })
                         })
                     })
@@ -242,4 +251,3 @@ class AlgusInstanceDirector {
     }
 }
 
-export default AlgusInstanceDirector;

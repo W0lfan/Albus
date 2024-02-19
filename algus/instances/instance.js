@@ -1,7 +1,5 @@
-import fetch from 'node-fetch'; // Import fetch for Node.js environment
 import { v1 as uuid } from 'uuid';
 import Method from './methods.js';
-import chalk from 'chalk';
 
 class Instance  {
     /*
@@ -15,6 +13,8 @@ class Instance  {
 
     */
 
+    #fetchWEB = false;
+
     constructor(name, Algus) {
         // Chaque instance doit être liée à une classe parent "Algus"
         if (!Algus) {
@@ -26,7 +26,7 @@ class Instance  {
         this.algusID = Algus.id;
         this.id = uuid();
         this.printMethod = `Instance <@${this.id}>`;
-        this.location = `https://albi-bus.naflouille-creations.com/reseau-bus-albi/${name}.json`;
+        this.location = `${this.#fetchWEB ? 'https://albi-bus.naflouille-creations.com/reseau-bus-albi/' : '/Algorithm/utils/data/'}${name}.json`;
     
     }
 
@@ -37,7 +37,7 @@ class Instance  {
                 this.data = data;
                 this.method = new Method(this, data);
     
-                console.log(chalk.green(`Initialized ${this.name}`));
+                console.log((`Initialized ${this.name}`));
                 if (this.algus.printMethods) {
                     console.log(`Initialized ${this.name} for ${this.printMethod} (${this.algus.printMethod})`);
                 }
@@ -60,8 +60,8 @@ class Instance  {
         try {
             const response = await fetch(this.location);
             if (!response.ok) throw new Error(`Data fetch failed for ${this.printMethod}`);
-
             const data = await response.json();
+            console.log(data)
             return data;
 
         } catch (error) {

@@ -1,3 +1,4 @@
+/*
 import AlgusInstanceDirector from "./index.js";
 
 
@@ -9,13 +10,21 @@ const algus = new AlgusInstanceDirector({
 });
 
 
+const location = {
+    longitude : "44.0162257",
+    latitude : "2.2827384"
+}
 
 
 algus.run({
-    name : "G",
-    date : "20240218",
-    direction : 1,
+    name : "A",
+    date : "20240219",
+    direction : null,
     block_id : null
-}, (algusResults) => {
-    console.log(algusResults.stops)
+},(albusContent) => {
+    console.log(albusContent.stopTimes)
 })
+
+
+
+*/
