@@ -1,0 +1,867 @@
+[
+  {
+    "service_id": "1",
+    "date": "20231111",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "2",
+    "date": "20231023",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231024",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231025",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231026",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231027",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231030",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231031",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231102",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231103",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231226",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231227",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231228",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20231229",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240102",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240103",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240104",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240105",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240212",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240213",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240214",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240215",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240216",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240219",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240220",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240221",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240222",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240223",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240408",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240409",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240410",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240411",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240412",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240415",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240416",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240417",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240418",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "2",
+    "date": "20240419",
+    "exception_type": "1"
+  },
+  {
+    "service_id": "3",
+    "date": "20231023",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231024",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231025",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231026",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231027",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231030",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231031",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231101",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231102",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231103",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231225",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231226",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231227",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231228",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20231229",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240101",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240102",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240103",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240104",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240105",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240212",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240213",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240214",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240215",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240216",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240219",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240220",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240221",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240222",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240223",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240401",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240408",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240409",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240410",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240411",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240412",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240415",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240416",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240417",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240418",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240419",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240501",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240508",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240509",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "3",
+    "date": "20240510",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231023",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231024",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231026",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231027",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231030",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231031",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231102",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231103",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231225",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231226",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231228",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20231229",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240101",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240102",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240104",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240105",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240212",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240213",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240215",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240216",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240219",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240220",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240222",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240223",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240401",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240408",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240409",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240411",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240412",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240415",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240416",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240418",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240419",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240509",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "4",
+    "date": "20240510",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231023",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231024",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231025",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231026",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231030",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231031",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231101",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231102",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231225",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231226",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231227",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20231228",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240101",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240102",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240103",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240104",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240212",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240213",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240214",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240215",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240219",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240220",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240221",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240222",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240401",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240408",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240409",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240410",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240411",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240415",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240416",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240417",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240418",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240501",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240508",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "5",
+    "date": "20240509",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20231025",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20231101",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20231227",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240103",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240214",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240221",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240410",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240417",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240501",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "6",
+    "date": "20240508",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20231027",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20231103",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20231229",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20240105",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20240216",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20240223",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20240412",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20240419",
+    "exception_type": "2"
+  },
+  {
+    "service_id": "7",
+    "date": "20240510",
+    "exception_type": "2"
+  }
+]
